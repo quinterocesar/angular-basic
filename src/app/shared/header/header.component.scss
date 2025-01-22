@@ -1,0 +1,31 @@
+header {
+  background-color: black;
+  color: white;
+
+  .logo {
+    width: 150px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 1rem;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        color: cornflowerblue;
+        transition: 0.3s;
+      }
+    }
+  }
+}

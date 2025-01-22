@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+@import './assets/styles/global/resets';
+@import './assets/styles/fonts/fonts';
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: thin;
+}
+
+
+body {
+  margin: 0;
+}
+
+aside {
+  width: 15.625rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+section {
+  padding-block: 2.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
