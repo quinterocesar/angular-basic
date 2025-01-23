@@ -1,0 +1,7 @@
+<aside class="app-sidebar">
+  <ul>
+    @for (image of imageList; track $index) {
+      <li (click)="handleSelectedImage(image)">{{ image.title }}</li>
+    }
+  </ul>
+</aside>

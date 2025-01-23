@@ -1,10 +1,18 @@
-<app-header></app-header>
+<app-header />
 
-<aside class="app-aside">
-  <app-body [imageList]="imageLIst"/>
-</aside>
+<div class="wrapper">
 
-<main class="app-main">
-</main>
+  <app-sidebar [imageList]="imageList" (selectedImage)="logImage($event)" />
+
+  <main class="app-main">
+    <div style="margin: 2.5rem 1.5rem; width: 50%;">
+      <h4>{{ selectedImage?.title }}</h4>
+      @if (selectedImage?.path) {
+      <img [src]="selectedImage?.path" [alt]="selectedImage?.title" height="auto" width="100%" />
+      }
+      <p>{{ selectedImage?.description }}</p>
+    </div>
+  </main>
+</div>
 
 <app-footer></app-footer>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "holamundo": {
+    "doggallery": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/holamundo",
+            "outputPath": "dist/doggallery",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "holamundo:build:production"
+              "buildTarget": "doggallery:build:production"
             },
             "development": {
-              "buildTarget": "holamundo:build:development"
+              "buildTarget": "doggallery:build:development"
             }
           },
           "defaultConfiguration": "development"

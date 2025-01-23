@@ -1,20 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@use './assets/styles/global/resets';
+@use './assets/styles/fonts/fonts';
+
 :root {
   --primary-color: black;
   --secondary-color: white;
 }
 
-@import './assets/styles/global/resets';
-@import './assets/styles/fonts/fonts';
 
 * {
   font-family: 'Poppins', sans-serif;
-  font-weight: thin;
+  font-weight: lighter;
 }
 
 
 body {
   margin: 0;
+  background-color: var(--primary-color);
 }
 
 aside {

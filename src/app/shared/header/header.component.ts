@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   private nombreLogo = 'Arkano Software';
   isLogedIn = false;
-  logoSrc = 'assets/images/logo-arkano.png';
+  logoSrc = 'assets/images/logo-dog-gallery.png';
 
   get logo() {
     return this.nombreLogo;

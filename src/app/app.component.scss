@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  height: 82vh;
+  background-color: var(--secondary-color);
+}
