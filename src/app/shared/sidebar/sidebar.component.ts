@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
-import { Image } from "../../interfaces/image-list.interface";
+import { ImageInterface } from "../../interfaces/image-list.interface";
 
 
 @Component({
@@ -8,8 +8,8 @@ import { Image } from "../../interfaces/image-list.interface";
   styleUrls: ["./sidebar.component.scss"]
 })
 export class SidebarComponent {
-  @Input() imageList: Image[] = [];
-  @Output() selectedImage = new EventEmitter<Image>();
+  @Input() imageList: ImageInterface[] = [];
+  @Output() selectedImage = new EventEmitter<ImageInterface>();
 
   constructor() {
     console.log("SidebarComponent constructor");
@@ -23,7 +23,7 @@ export class SidebarComponent {
     console.log("SidebarComponent ngOnDestroy");
   }
 
-  handleSelectedImage(image: Image) {
+  handleSelectedImage(image: ImageInterface) {
     this.selectedImage.emit(image);
   }
 }

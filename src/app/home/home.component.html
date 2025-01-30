@@ -1,1 +1,9 @@
 <h1 style="text-align: center;">Bienvenido a Dog Gallery</h1>
+
+<div class="container">
+  <div class="image-list">
+      @for (image of imageList; track $index) {
+        <app-image-card [image]="image" (click)="handleImgaClick(image)"/>
+      }
+  </div>
+</div>

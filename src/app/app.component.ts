@@ -4,7 +4,7 @@ import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 import imageList from "./constants/data";
-import { Image } from './interfaces/image-list.interface';
+import { ImageInterface } from './interfaces/image-list.interface';
 
 @Component({
   selector: 'app-root',
@@ -15,9 +15,9 @@ import { Image } from './interfaces/image-list.interface';
 export class AppComponent {
   title = 'Dogs Gallery';
   imageList = imageList;
-  selectedImage: Image | null = null;
+  selectedImage: ImageInterface | null = null;
 
-  logImage(image: Image) {
+  logImage(image: ImageInterface) {
     this.selectedImage = image;
   }
 }

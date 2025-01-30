@@ -1,0 +1,7 @@
+<div class="card-elevated">
+  @if (image) {
+    <img class="card-image" [src]="image.path" [alt]="image.title" />
+  }
+  <div class="card-content">
+    <h2 class="card-title">{{ image?.title }}</h2>
+</div>

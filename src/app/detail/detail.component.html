@@ -1,0 +1,27 @@
+<div class="content">
+  <div class="detail">
+    <img [src]="selectedImage?.path" [alt]="selectedImage?.title" />
+    <h2>{{ selectedImage?.title }}</h2>
+    <p>{{ selectedImage?.description }}</p>
+
+    <div class="comments">
+      <h3>Comments</h3>
+      <ul>
+        @for (comment of selectedImage?.comments; track $index) {
+          <li>
+            <p>{{comment.user}} dice {{ comment.comment }}</p>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="tags">
+      <h3>Tags</h3>
+      <ul>
+        @for (tag of selectedImage?.tags; track $index) {
+          <li>{{ tag }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
